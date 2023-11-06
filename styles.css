@@ -1,11 +1,255 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
 }
-
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+  }
+  
+  header h1 {
+    margin: 0;
 }
+
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav li {
+    display: inline-block;
+  }
+  
+  header nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  header nav a:hover {
+    background-color: #ccc;
+  }
+
+
+ /*overview section*/
+.overview-hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+    background-color: #E2E8F0;
+  }
+  
+  .overview-hero-image {
+    padding: 5px;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover ;
+  }
+  
+  .overview-hero-text {
+    grid-column: 2;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;  
+  }
+  
+  h2 {
+    margin-top: 1;
+  }
+  
+  p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    padding: 1rem;
+  }
+
+/*Learn About*/
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    border-color: #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    grid-row: 1;
+    height: 75%;
+    width: 70%;
+}
+
+.card-body {
+    grid-row: 2;
+}
+
+
+.learn-about h2 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+    grid-area: title;
+    color: #48BB78;
+    font-size: 24px;
+  }
+
+.learn-about h3 {
+    font-size: 21px;
+    color: #48BB78;
+  }
+
+/*COVID-19 Testing Programme*/
+.testing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #4A5568;
+    color: white;
+  }
+  
+.testing-desciption {
+    flex-grow: 1;
+  }
+  
+.cta {
+    flex-shrink: 0;
+  }
+  
+.cta .btn {
+    margin-left: 20px;
+    background-color: #48BB78;
+    border-radius: 5px;
+  }
+
+/*Recent Stories*/
+.stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+.stories article {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    margin-bottom: 10px;
+  }
+  
+.stories article img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    max-width: 50%;
+  }
+  
+  .stories article .article-body {
+    flex: 1;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+.stories article a {
+    text-decoration: none;
+    color:  #5A67D8;
+  }
+
+.stories h3 {
+    color: #5A67D8;
+  }
+  
+
+h3 {
+  text-align: center;
+}
+
+
+/*Newsletter*/
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #48BB78;
+  color: white;
+  border-radius: 10px;
+}
+
+.newsletter h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.newsletter form .form-group {
+  flex: 1;
+}
+
+.newsletter form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.newsletter form .btn {
+  width: 100px;
+  padding: 10px;
+  background-color: #5A67D8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+    background-color: #4A5568;
+    color: white;
+  }
